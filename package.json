@@ -5,6 +5,7 @@
     "./services/*"
   ],
   "scripts": {
-    "init": "yarn"
+    "init": "yarn",
+    "start": "docker compose build && docker compose up"
   }
 }
