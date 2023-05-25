@@ -8,5 +8,4 @@
 !.yarn/versions
 
 node_modules
-package-lock.json
 dist
