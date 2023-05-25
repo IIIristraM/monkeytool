@@ -1,0 +1,10 @@
+{
+  "name": "monkeytool",
+  "packageManager": "yarn@3.5.1",
+  "workspaces": [
+    "./services/*"
+  ],
+  "scripts": {
+    "init": "yarn"
+  }
+}
