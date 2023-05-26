@@ -1,0 +1,12 @@
+{
+  "name": "monkeytool",
+  "packageManager": "yarn@3.5.1",
+  "workspaces": [
+    "./services/*"
+  ],
+  "scripts": {
+    "init": "yarn && npm run build",
+    "build": "docker compose build",
+    "start": "docker compose up"
+  }
+}

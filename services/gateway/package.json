@@ -1,0 +1,30 @@
+{
+  "name": "@monkeytool/gateway",
+  "version": "0.0.1",
+  "description": "",
+  "private": true,
+  "main": "./dist/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "ts-node-dev ./src/index.ts"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/IIIristraM/monkeytool.git"
+  },
+  "author": "iiiristram",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/IIIristraM/monkeytool/issues"
+  },
+  "homepage": "https://github.com/IIIristraM/monkeytool#readme",
+  "devDependencies": {
+    "@types/node": "^20.2.3",
+    "ts-node": "^10.9.1",
+    "ts-node-dev": "^2.0.0",
+    "typescript": "^5.0.0"
+  },
+  "dependencies": {
+    "mongodb": "^5.5.0"
+  }
+}
