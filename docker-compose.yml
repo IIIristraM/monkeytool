@@ -6,7 +6,7 @@ services:
     ports:
       - "3000:3000"
     depends_on:
-      - mongo 
+      - mongo
       - queries-processor
   queries-processor:
     build: ./services/queries-processor
@@ -14,6 +14,8 @@ services:
       - ./services/queries-processor:/service
     ports:
       - "3001:3000"
+    depends_on:
+      - redis
   mongo:
     image: mongo
     restart: always
@@ -24,3 +26,10 @@ services:
     environment:
       MONGO_INITDB_ROOT_USERNAME: root
       MONGO_INITDB_ROOT_PASSWORD: example
+  redis:
+    image: redis
+    restart: always
+    volumes:
+      - ./db/redis/data:/data
+    ports:
+      - "6379:6379"
